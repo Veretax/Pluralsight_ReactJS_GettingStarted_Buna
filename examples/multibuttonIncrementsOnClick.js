@@ -20,14 +20,14 @@ class Button extends React.Component {
   };
   
   class App extends React.Component {
-      state = { counter: 0 };
-   
-       incrementCounter = (incrementValue) => {
+    state = { counter: 0 };
+
+    incrementCounter = (incrementValue) => {
         this.setState((prevState) => ({
-          counter: prevState.counter + incrementValue
-      }));
+            counter: prevState.counter + incrementValue
+        }));
     }
-      render() {
+    render() {
         return (
           <div>
             <Button incrementValue={1} onClickFunction={this.incrementCounter} />
